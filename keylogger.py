@@ -51,7 +51,7 @@ def on_press(key):
         pass
     elif key == keyboard.Key.backspace and len(text) > 0:
         text = text[:-1]
-    elif key == keyboard.Key.ctrl_l or key == keyboard.Key.ctrl_r:
+    elif key in [keyboard.Key.ctrl_l, keyboard.Key.ctrl_r]:
         pass
     elif key == keyboard.Key.esc:
         return False
